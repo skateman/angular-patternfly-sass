@@ -1,9 +1,9 @@
 {
   "author": "Red Hat",
-  "name": "angular-patternfly",
-  "version": "3.0.0",
-  "description": "Angular extension of the PatternFly project.",
-  "homepage": "https://github.com/patternfly/angular-patternfly",
+  "name": "angular-patternfly-sass",
+  "version": "0.0.1",
+  "description": "Angular extension of the PatternFly project. (patternfly-sass compatible)",
+  "homepage": "https://github.com/patternfly/angular-patternfly-sass",
   "dependencies": {},
   "devDependencies": {
     "express": "3.4.4",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patternfly/angular-patternfly.git"
+    "url": "https://github.com/patternfly/angular-patternfly-sass.git"
   },
   "engines": {
     "node": ">=0.10.10"
