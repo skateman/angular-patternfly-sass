@@ -16,9 +16,14 @@ sed -i -e 's/"patternfly":/"patternfly-sass":/' bower.json
 sed -i -e 's/\(description": .*\)",/\1 (patternfly-sass compatible)",/' `ls -1 bower.json package.json`
 
 git commit -am "Converted $3"
+
+# push & publish
 git push $2 convert-$3
 git tag $3
 git push $2 $3
+npm publish
+
+# cleanup
 git checkout master
 git branch -D convert-$3
 git push $2 :convert-$3
