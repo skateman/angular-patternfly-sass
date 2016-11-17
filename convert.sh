@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ $# != 3 ]; then
+  echo "$0: <remote source> <remote destination> <release tag>" 1>&2
+  exit 1
+fi
+
 git fetch --no-tags $1
 git checkout `git ls-remote --tags $1 | grep refs/tags/$3 | cut -f1`
 git checkout -b convert-$3
