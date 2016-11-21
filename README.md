@@ -14,7 +14,8 @@ Because this port differs from the original package in **two lines**, the versio
 This script:
 * Downloads the tagged commit from the remote source and creates a new branch
 * Replaces the `patternfly` dependency to `patternfly-sass` in `bower.json` and `package.json` and commits it
-* Creates the tag and pushes it to the server together with the branch
+* Creates the tag and pushes it to the server together with the branch (updating the bower package)
+* Publishes the npm package
 * The branch is deleted both locally and remotely
 
 ## Contributing
